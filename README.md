@@ -10,5 +10,5 @@ $ set docker_cert_path=%userprofile%\.docker\machine\machines\default
 set docker_host=tcp://192.172.99.110 --> locate this ip in docker quick start terminal
 $ set docker_machine_name=default
 $ set docker_tls_verify=1
-Test: http://192.172.99.110:8000/index.html![image](https://user-images.githubusercontent.com/99873352/154987278-4aee3c3e-9cb1-45db-b689-f6fba07cba19.png)
+Test: http://192.172.99.110:8000/index.html! 
 
