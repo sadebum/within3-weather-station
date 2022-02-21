@@ -1,7 +1,7 @@
 FROM node:latest
-ENV NODE_ENV=production
-WORKDIR /app
-COPY . /app
+WORKDIR /usr/src/app
+COPY package*.json ./
 RUN npm install --production
+COPY index.js ./
 EXPOSE 8080
 CMD [ "node", "index.js"]

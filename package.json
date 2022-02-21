@@ -10,8 +10,9 @@
   "author": "w3sar",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "start": "^5.1.0"
   },
   "devDependencies": {
     "jest": "^27.5.1"
