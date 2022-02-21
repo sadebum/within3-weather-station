@@ -1,15 +1,14 @@
 # How to run docker images and containers locally (within3-weather-station Project)
-Assumption: All other files such as package.json, index.js and other files has been created.
-Create a Docker file and should primarily contain the following parameters based on this project:
+How to run Docker images and container 
+Dockerfile has been created, then follow the next steps
+$ docker build -t adebum/within3-weather-station .  ==> to run docker image
+$ docker run -p 8000:8080 -d adebum/within3-weather-station 
+$ docker ps
+To set up docker environment:
+$ set userprofile = c:\users\  ==> set user proile 
+$ set docker_cert_path=%userprofile%\.docker\machine\machines\default
+set docker_host=tcp://192.172.99.110 --> locate this ip in docker quick start terminal
+$ set docker_machine_name=default
+$ set docker_tls_verify=1
+Test: http://192.172.99.110:8000/index.html![image](https://user-images.githubusercontent.com/99873352/154987278-4aee3c3e-9cb1-45db-b689-f6fba07cba19.png)
 
-FROM node:latest
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install --production
-COPY index.js ./
-EXPOSE 8080
-CMD [ "node", "index.js"]
-
-build docker images with this command: docker build . -t sadebum/within3weatherstation .
-Run docker container with this command: docker run -p 9000:8080 -d sadebum/within3weatherstation
-docker ps 
